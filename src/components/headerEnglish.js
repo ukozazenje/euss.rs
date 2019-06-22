@@ -33,9 +33,9 @@ const Header = ({ siteTitle }) => (
       
       <ul class="navigation container">
         <img class="logo-navigation" src={logo} alt="logo" />
-        <li><Link to="/">Početna</Link></li>
-        <li><Link to="/o-nama">O firmi</Link></li>
-        <li><Link to="/en/home">EN</Link></li>
+        <li><Link to="/en/home">Home</Link></li>
+        <li><Link to="/en/about-us">Company</Link></li>
+        <li><Link to="/">RS</Link></li>
       </ul>
     </div>
   </nav>

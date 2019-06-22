@@ -1,0 +1,283 @@
+.cards-wrapper {
+  background: url('../../images/crop-bg-middle.png');
+  min-height: 1851px;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  z-index: 2;
+
+  @include large-breakpoint {
+    background: url('../../images/crop-bg-top.png');    
+    background-size: cover;
+    background-position: top;
+    position: relative;
+  }
+
+}
+.cards-wrapper-bottom {
+  // position: absolute;
+  width: 100%;
+  height: 120px;
+  background: url('../../images/crop-bg.png');
+  background-size: cover;
+  background-position: top;
+  z-index: 1;
+
+  @include small-breakpoint {
+    height: 200px;
+  }
+  @include large-breakpoint {
+    height: 346px;
+  }
+}
+.cards-wrapper-top {
+  width: 100%;
+  height: 120px;
+  background: url('../../images/crop-bg-top-mobile.png');
+  background-size: cover;
+  background-position: top;
+  z-index: 1;
+
+  @include small-breakpoint {
+    height: 200px;
+  }
+
+  @include large-breakpoint {
+    display: none;
+  }
+}
+.card {
+  background: url('../../images/button-bg.png');
+  text-align: center;
+  min-height: 415px;
+  flex-direction: column;
+  padding-bottom: 1.25rem;
+
+  h4 {
+    font-weight: 400;
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  
+  .card-title {
+    color: rgba(255, 255, 255, 0.80)
+  }
+
+  h3 {
+    margin-bottom: 40px;
+  }
+  .card-list {
+    text-align: left;
+    margin-bottom: 20px;
+    list-style: none;
+    position: relative;
+    display: block;
+    width: 100%;
+    
+    li::before {
+      position: absolute;
+      content: "- ";
+      width: 10px;
+      margin-left: -20px;
+    }
+
+    li {
+      font-size: 1.125rem;
+    }
+
+    img {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @include large-breakpoint {
+
+    .card-list {
+      display: initial;
+      width: initial;
+
+      li {
+        font-size: 1.25rem;
+      }
+    }
+    
+  }
+
+}
+
+.card-1 {
+  margin-top: 0;
+
+  @include large-breakpoint {
+    margin-top: 450px;
+  }
+
+}
+
+.card-2 {
+  margin-top: 0;
+  @include large-breakpoint {
+    margin-top: 375px;
+  }
+
+}
+
+.card-3 {
+  margin-top: 0;
+  @include large-breakpoint {
+    margin-top: 300px;
+  }
+}
+
+.card-4 {
+  margin-top: 0;
+  @include large-breakpoint {
+    margin-top: 150px;
+  }
+}
+
+.card-5 {
+  margin-top: 0;
+
+  @include large-breakpoint {
+    margin-top: 75px;
+  }
+}
+
+.card-6 {
+  margin-top: 0;
+}
+
+.implementation-img {
+  text-align: right;
+}
+
+.sub-heading {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.demands-content {
+  margin-top: 3rem;
+  h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.implementation-img {
+  width: 100%;
+
+  @include small-breakpoint {
+    width: initial;
+  }
+}
+.implementation-intro-text {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+
+  @include small-breakpoint {
+    margin-bottom: 4rem;
+  }
+}
+.implementation-section {
+  margin-top: 3rem;
+
+  h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+   
+}
+.custom-list {
+  text-align: left;
+  margin-bottom: 40px;
+  list-style: none;
+  position: relative;
+  margin-bottom: 1rem;
+  
+  li::before {
+    position: absolute;
+    content: "- ";
+    width: 10px;
+    margin-left: -20px;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+}
+
+
+footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  background: url('../../images/Bitmap-footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .custom-list {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 2rem;
+    li {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+    li::before {
+      position: absolute;
+      content: "";
+      width: 10px;
+      margin-left: -20px;
+    }
+
+    @include large-breakpoint {
+      margin-top: 41px;
+    }
+    
+  }
+  label {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: left;
+  }
+  form {
+    margin-bottom: 2rem;
+
+    .btn-submit {
+      margin-top: 2rem;
+    }
+  }
+  .contact-field {
+    color: #fff;
+    border-color: transparent;
+    border-radius: 0;
+  }
+
+  .contact-field::placeholder {
+    color: rgba(255, 255, 255, 0.3)
+  }
+  .copy-right {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    
+    .flex-large {
+      margin-bottom: 0;
+    }
+    p {
+      color: #fff;
+      margin: 0;
+      padding: 15px 0;
+      font-size: 0.875rem;
+    }
+  }
+
+  @include large-breakpoint {
+    .custom-list {
+      padding-left: 40px;
+    }
+  }
+}

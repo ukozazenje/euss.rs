@@ -6,11 +6,11 @@ import Hero from "../components/hero"
 import grejanje from '../images/grejanje.png'
 import klimatizacija from '../images/klimatizacija.png'
 import gasneInstalacije from '../images/gasne-instalacije.png'
-import ElaboratiEnergetskeEfikasnostin from '../images/elaborati-energetske-efikasnosti.png'
+import ElaboratiEnergetskeEfikasnostin from '../images/elaborati.png'
 import komponovaniVazduh from '../images/komponovani-vazduh.png'
 import ventilacija from '../images/ventilacija.png'
 import alternativniIzvorEnergije from '../images/alternativni-izvor-energije.png'
-import kotlarnice from '../images/kotlarnice.png'
+import kotlarnice from '../images/ikonica-smanjena.svg'
 import sistemiVentilacija from '../images/1.svg'
 import implementacija from '../images/implementacija.png'
 import zahtevi from '../images/zahtevi.png'
@@ -116,7 +116,7 @@ const IndexPage = () => (
                 <li className="card-list-item">lož ulje</li>
                 <li className="card-list-item">TNG</li>
               </ul>
-              <img src={kotlarnice} alt="klima" />
+              <img style={{height: '99px'}} src={kotlarnice} alt="klima" />
             </div>
           </div>
           <div className="flex-large card-6">

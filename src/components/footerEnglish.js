@@ -1,20 +1,49 @@
 import React from 'react'
+import axios from 'axios'
+import { Field, Formik, Form } from 'formik';
+import SignUpSchema from './validateEnglish'
 
 const Footer = () => (
   <footer>
     <div className="container">
       <div className="flex-row">
         <div className="flex-large">
-        <form className="text-center">
-            <label htmlFor="name">First and Last name</label>
-            <input type="text" id="name" className="contact-field" placeholder="Enter first and last name" />
-            <label htmlFor="name">E-mail</label>
-            <input type="email" id="email" className="contact-field" placeholder="Enter e-mail" />
-            <label htmlFors="comments">Question</label>
-            <textarea rows="6" placeholder="Ask question" name="comments" className="contact-field" id="comments"></textarea>
-            <input type="submit" className="btn-submit" value="Send" />
-          </form>
-        </div>
+          <Formik
+            initialValues={{ name: "", email: "", component: "" }}
+            validationSchema={SignUpSchema}
+            onSubmit={(values, actions) => {
+              axios({
+                method: 'post',
+                url: '/main.php',
+                data: {
+                  name: values.name,
+                  email: values.email,
+                  message: values.message
+                },
+                headers: {
+                  'content-type': 'application/json',
+                },
+              });
+      
+            }}
+            render={({errors,touched }) => (
+              <Form action="">
+                <label htmlFor="name">First and Last name</label>
+                {errors.name && touched.name ? ( <div className="error-msg">{errors.name}</div> ) : null}
+                <Field type="text" name="name" id="name" className="contact-field" placeholder="Enter first and last name" />
+
+                <label htmlFor="name">E-mail</label>
+                {errors.email && touched.email ? ( <div className="error-msg">{errors.email}</div> ) : null}
+                <Field name="email" type="email" id="email" className="contact-field" placeholder="Enter e-mail" />
+
+                <label htmlFor="comments">Question</label>
+                {errors.comments && touched.comments ? ( <div className="error-msg">{errors.comments}</div> ) : null}
+                <Field component="textarea" rows="6" placeholder="Ask question" name="comments" className="contact-field" id="comments" />
+                
+                <button type="submit" className="btn-submit">Send</button>
+              </Form>
+            )} />
+          </div>
         <div className="flex-large">
           <ul className="custom-list">
             <li><strong>Director:</strong> Miloš Kočević <span className="mobile-titula">dipl.ing.me</span></li>

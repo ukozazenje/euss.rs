@@ -1,19 +1,48 @@
 import React from 'react'
+import axios from 'axios'
+import { Field, Formik, Form } from 'formik';
+import SignUpSchema from './validate'
 
 const Footer = () => (
   <footer>
     <div className="container">
       <div className="flex-row">
         <div className="flex-large">
-        <form className="text-center">
-            <label htmlFor="name">Ime i prezime</label>
-            <input type="text" id="name" className="contact-field" placeholder="Unesite Vaše ime i prezime" />
-            <label htmlFor="name">E-mail</label>
-            <input type="email" id="email" className="contact-field" placeholder="Unesite Vaš e-mail" />
-            <label htmlFor="comments">Pitanje</label>
-            <textarea rows="6" placeholder="Postavite pitanje" name="comments" className="contact-field" id="comments"></textarea>
-            <input type="submit" className="btn-submit" value="Pošalji" />
-          </form>
+        <Formik
+          initialValues={{ name: "", email: "", component: "" }}
+          validationSchema={SignUpSchema}
+          onSubmit={(values, actions) => {
+            axios({
+              method: 'post',
+              url: '/main.php',
+              data: {
+                name: values.name,
+                email: values.email,
+                message: values.message
+              },
+              headers: {
+                'content-type': 'application/json',
+              },
+            });
+    
+          }}
+          render={({errors,touched }) => (
+            <Form action="">
+              <label htmlFor="name">Ime i prezime</label>
+              {errors.name && touched.name ? ( <div className="error-msg">{errors.name}</div> ) : null}
+              <Field type="text" name="name" id="name" className="contact-field" placeholder="Unesite Vaše ime i prezime" />
+
+              <label htmlFor="name">E-mail</label>
+              {errors.email && touched.email ? ( <div className="error-msg">{errors.email}</div> ) : null}
+              <Field name="email" type="email" id="email" className="contact-field" placeholder="Unesite Vaš e-mail" />
+
+              <label htmlFor="comments">Pitanje</label>
+              {errors.comments && touched.comments ? ( <div className="error-msg">{errors.comments}</div> ) : null}
+              <Field component="textarea" rows="6" placeholder="Postavite pitanje" name="comments" className="contact-field" id="comments" />
+              
+              <button type="submit" className="btn-submit">Pošalji</button>
+            </Form>
+          )} />
         </div>
         <div className="flex-large">
           <ul className="custom-list">

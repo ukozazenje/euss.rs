@@ -124,3 +124,8 @@ textarea {
 :-ms-input-placeholder {
   color: $placeholder;
 }
+
+.error-msg {
+  text-align: right;
+  color: $error;
+}

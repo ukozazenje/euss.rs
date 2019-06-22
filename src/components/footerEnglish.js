@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import { navigate } from 'gatsby'
 import { Field, Formik, Form } from 'formik';
 import SignUpSchema from './validateEnglish'
 
@@ -18,13 +19,13 @@ const Footer = () => (
                 data: {
                   name: values.name,
                   email: values.email,
-                  message: values.message
+                  comments: values.comments
                 },
                 headers: {
                   'content-type': 'application/json',
                 },
-              });
-      
+              })
+              navigate('/en/thank-you/')
             }}
             render={({errors,touched }) => (
               <Form action="">

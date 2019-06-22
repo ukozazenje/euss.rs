@@ -108,7 +108,7 @@ const IndexPage = () => (
           <div className="flex-large card-5">
             <div className="card vertical-center">
               <h3 className="card-title">TOPLOVODI  I PAROVODI KOTLARNICE </h3>
-              <h4>Na sve vrste goriva</h4>
+              <h4 className="left-mobile">Na sve vrste goriva</h4>
               <ul className="card-list">
                 <li className="card-list-item">ugalj</li>
                 <li className="card-list-item">pelet</li>

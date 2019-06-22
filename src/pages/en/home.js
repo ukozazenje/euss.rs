@@ -107,7 +107,7 @@ const IndexPage = () => (
           <div className="flex-large card-5">
             <div className="card vertical-center">
               <h3 className="card-title">STEAM DISTRIBUTION BOILER ROOM</h3>
-              <h4>On all types of fuel</h4>
+              <h4 className="left-mobile">On all types of fuel</h4>
               <ul className="card-list">
                 <li className="card-list-item">coal</li>
                 <li className="card-list-item">pellet</li>
@@ -115,7 +115,7 @@ const IndexPage = () => (
                 <li className="card-list-item">fuel oil</li>
                 <li className="card-list-item">LPG</li>
               </ul>
-              <img src={kotlarnice} alt="klima" />
+              <img style={{height: '99px'}} src={kotlarnice} alt="klima" />
             </div>
           </div>
           <div className="flex-large card-6">

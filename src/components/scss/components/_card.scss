@@ -6,11 +6,21 @@
   position: relative;
   z-index: 2;
 
+  h4.left-mobile {
+    align-self: end;
+    padding-left: 1rem;
+  }
+
   @include large-breakpoint {
     background: url('../../images/crop-bg-top.png');    
     background-size: cover;
     background-position: top;
     position: relative;
+
+    h4.left-mobile {
+      align-self: center;
+      padding-left: 0;
+    }
   }
 
 }

@@ -130,7 +130,7 @@
 }
 
 #slider,  #slider .slide{
-  padding-top: 6rem;
+  padding-top: 3rem;
   width: 350px;
   height: 400px;
   // text-transform: uppercase;
@@ -145,10 +145,12 @@
   }
 
   @include medium-breakpoint {
+    padding-top: 5rem;
     width: 600px;
   }
 
   @include large-breakpoint {
+    padding-top: 6rem;
     width: 1000px;
 
     .logo {

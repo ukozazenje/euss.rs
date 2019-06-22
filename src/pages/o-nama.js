@@ -7,21 +7,21 @@ import oNamaImg from '../images/o-nama-text.png'
 const Onama = () => (
   <Layout>
     <SEO title="O nama" />
-    <div class="about-us-hero">
-      <div class="container">
-        <div class="flex-row">
-          <div class="flex-large">
-            <h1 class="vertical-center">O FIRMI</h1>
+    <div className="about-us-hero">
+      <div className="container">
+        <div className="flex-row">
+          <div className="flex-large">
+            <h1 className="vertical-center">O FIRMI</h1>
           </div>
         </div>
       </div>
     </div>
-    <div class="container about-us-content">
-      <div class="flex-row">
-        <div class="flex-large">
+    <div className="container about-us-content">
+      <div className="flex-row">
+        <div className="flex-large">
           <img src={oNamaImg} alt="o nama" />
         </div>
-        <div class="flex-large">
+        <div className="flex-large">
           <p>
               Ova relativno mlada firma potiče iz porodične tradicije, 
   zasnovana na porodičnom iskustvu, koje se prenosi generacijama.

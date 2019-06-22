@@ -6,11 +6,11 @@ const Footer = () => (
       <div className="flex-row">
         <div className="flex-large">
         <form className="text-center">
-            <label for="name">Ime i prezime</label>
+            <label htmlFor="name">Ime i prezime</label>
             <input type="text" id="name" className="contact-field" placeholder="Unesite Vaše ime i prezime" />
-            <label for="name">E-mail</label>
+            <label htmlFor="name">E-mail</label>
             <input type="email" id="email" className="contact-field" placeholder="Unesite Vaš e-mail" />
-            <label for="comments">Pitanje</label>
+            <label htmlFor="comments">Pitanje</label>
             <textarea rows="6" placeholder="Postavite pitanje" name="comments" className="contact-field" id="comments"></textarea>
             <input type="submit" className="btn-submit" value="Pošalji" />
           </form>
@@ -21,7 +21,7 @@ const Footer = () => (
             <li><strong>Adresa:</strong> Takovska 5, 36103 Kraljevo</li>
             <li><strong>Mobilni:</strong> + 381 60 1 777 686</li>
             <li><strong>E-mail:</strong> office@euss.rs</li>
-          </ul>
+          </ul> 
         </div>
       </div>
     </div>

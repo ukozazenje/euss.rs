@@ -6,11 +6,11 @@ const Footer = () => (
       <div className="flex-row">
         <div className="flex-large">
         <form className="text-center">
-            <label for="name">First and Last name</label>
+            <label htmlFor="name">First and Last name</label>
             <input type="text" id="name" className="contact-field" placeholder="Enter first and last name" />
-            <label for="name">E-mail</label>
+            <label htmlFor="name">E-mail</label>
             <input type="email" id="email" className="contact-field" placeholder="Enter e-mail" />
-            <label for="comments">Question</label>
+            <label htmlFors="comments">Question</label>
             <textarea rows="6" placeholder="Ask question" name="comments" className="contact-field" id="comments"></textarea>
             <input type="submit" className="btn-submit" value="Send" />
           </form>

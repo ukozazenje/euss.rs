@@ -12,8 +12,8 @@ import ventilacija from '../../images/ventilacija.png'
 import alternativniIzvorEnergije from '../../images/alternativni-izvor-energije.png'
 import kotlarnice from '../../images/ikonica-smanjena.svg'
 import sistemiVentilacija from '../../images/1.svg'
-import implementacija from '../../images/implementacija.png'
-import zahtevi from '../../images/zahtevi.png'
+import implementacija from '../../images/implementacija-standarda.png'
+import zahtevi from '../../images/tehnicki-zahtevi.png'
 
 const IndexPage = () => (
   <Layout>

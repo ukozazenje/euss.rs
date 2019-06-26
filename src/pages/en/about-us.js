@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../../components/layoutEnglish"
 import SEO from "../../components/seo"
-import oNamaImg from '../../images/o-nama-text.png'
+import oNamaImg from '../../images/o-firmi.png'
 
 const Onama = () => (
   <Layout>

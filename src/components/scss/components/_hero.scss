@@ -4,44 +4,9 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   height: 80vh;
-  .slider {
-    // overflow: hidden;
-    // margin: 0 auto;
-    // font-size: 1.2em;
-    // background: #ffd7d1;
-    // padding-top: 4rem;
-    // text-align: center;
-    // position: relative;
-    // width: 9000px; /* Assign an insanely large width */
-    // top: 0;
-    // right: 0;
-    // animation: slide-animation 25s infinite;
-
-    // h2, img {
-    //   position: relative;
-    //   float: left;
-    //   box-sizing: border-box;
-    //   padding: 10px 20px;
-    //   animation: 10s slidy infinite; 
-    // }
-
-  }
-  // .logo {
-  //   position: absolute;
-  //   width: 150px;
-  //   left: 50%;
-  //   top: 100px;
-  //   margin-left: -75px; 
-  // }
-
+  
   @include large-breakpoint {
     height: 960px;
-
-    // .logo {
-    //   top: 150px;
-    //   width: 250px;
-    //   margin-left: -125px; 
-    // }
   }
 
   

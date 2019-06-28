@@ -6,7 +6,11 @@ import oNamaImg from '../images/o-firmi.png'
 
 const Onama = () => (
   <Layout>
-    <SEO title="O nama" />
+    <SEO title="O nama" description="Ova relativno mlada firma potiče iz porodične tradicije, 
+  zasnovana na porodičnom iskustvu, koje se prenosi generacijama.
+  U firmi su zaposleni visoko kvalifikovani stručnjaci sa položenim
+  stručnim ispitom i licencama iz oblasti energetske efikasnosti,
+  projektovanja, izvođenja termotehničkih i gasnih instalacija." />
     <div className="about-us-hero">
       <div className="container">
         <div className="flex-row">

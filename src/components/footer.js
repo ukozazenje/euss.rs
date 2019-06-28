@@ -3,6 +3,7 @@ import axios from 'axios'
 import { navigate } from 'gatsby'
 import { Field, Formik, Form } from 'formik';
 import SignUpSchema from './validate'
+import Link from 'gatsby'
 
 const Footer = () => (
   <footer>
@@ -48,9 +49,9 @@ const Footer = () => (
         <div className="flex-large">
           <ul className="custom-list">
             <li><strong>Direktor:</strong> Miloš Kočević <span className="mobile-titula">dipl.inž.maš.</span></li>
-            <li><strong>Adresa:</strong> Takovska 5, 36103 Kraljevo</li>
-            <li><strong>Mobilni:</strong> + 381 60 1 777 686</li>
-            <li><strong>E-mail:</strong> office@euss.rs</li>
+            <li><strong>Adresa:</strong>Takovska 5, 36103 Kraljevo</li>
+            <li><strong>Mobilni:</strong><a href="tel:+381601777686"> + 381 60 1 777 686</a></li>
+            <li><strong>E-mail:</strong><a href="mailto:office@euss.rs">office@euss.rs</a></li>
           </ul> 
         </div>
       </div>

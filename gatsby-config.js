@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `european`,
-    description: `EUROPEAN PROJEKTOVANJE TERMOTEHNIČKIH INSTALACIJA KONSULTANTSKE USLUGE IZVOĐENJE I NADZOR TERMOTEHNIČKIH INSTALACIJA ENERGETSKA EFIKASNOST`,
+    description: `European projektovanje termotehničkih instalacija konsultantske usluge izvođenje i nadzor termotehničkih instalacija energetska efikasnost`,
     author: `european`,
   },
   plugins: [

@@ -17,7 +17,7 @@ import zahtevi from '../../images/tehnicki-zahtevi.png'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" /> 
+    <SEO title="Home" description="Execution and control of termotechnical installations energy efficiency consulting"/> 
     <Hero />
     <div className="cards-wrapper-top"></div>
     <div className="cards-wrapper">

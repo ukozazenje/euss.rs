@@ -49,7 +49,7 @@ const Footer = () => (
           <ul className="custom-list">
             <li><strong>Director:</strong> Miloš Kočević <span className="mobile-titula">dipl.ing.me</span></li>
             <li><strong>Address:</strong> Takovska 5, 36103 Kraljevo</li>
-            <li><strong>Mobile:</strong><a href="tel:+381601777 686"> + 381 60 1 777 686</a></li>
+            <li><strong>Mobile:</strong><a href="tel:+381601777686"> + 381 60 1 777 686</a></li>
             <li><strong>E-mail:</strong><a href="mailto:office@euss.rs">office@euss.rs</a></li>
           </ul>
         </div>

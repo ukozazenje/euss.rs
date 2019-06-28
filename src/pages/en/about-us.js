@@ -6,7 +6,10 @@ import oNamaImg from '../../images/o-firmi.png'
 
 const Onama = () => (
   <Layout>
-    <SEO title="About us" />
+    <SEO title="About us" description="This relatively young company comes from family tradition,
+based on family experience, which is passed on to the generations.
+The company employs highly qualified specialists with
+professional exam and licenses in the field of energy efficiency"/>
     <div className="about-us-hero">
       <div className="container">
         <div className="flex-row">
